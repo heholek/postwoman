@@ -270,7 +270,7 @@ export default {
           aceEditor: "vibrant_ink"
         },
         {
-          color: "var(--bg-color)",
+          color: "var(--ac-color)",
           name: this.$t("auto_system"),
           vibrant: window.matchMedia("(prefers-color-scheme: light)").matches,
           class: "auto",
@@ -339,8 +339,9 @@ export default {
           "https://postwoman.apollotv.xyz/",
         PROXY_KEY: this.$store.state.postwoman.settings.PROXY_KEY || "",
         EXTENSIONS_ENABLED:
-          (typeof this.$store.state.postwoman.settings.EXTENSIONS_ENABLED !== 'undefined') ? 
-            this.$store.state.postwoman.settings.EXTENSIONS_ENABLED 
+          typeof this.$store.state.postwoman.settings.EXTENSIONS_ENABLED !==
+          "undefined"
+            ? this.$store.state.postwoman.settings.EXTENSIONS_ENABLED
             : true
       },
 
