@@ -1,0 +1,57 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  reviewers:
+  - liyasthomas
+  labels:
+  - Dependency upgrade
+  ignore:
+  - dependency-name: cypress
+    versions:
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.8.0
+    - 7.0.1
+  - dependency-name: firebase
+    versions:
+    - 8.2.10
+    - 8.2.4
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.9
+    - 8.3.0
+    - 8.3.1
+    - 8.3.2
+    - 8.3.3
+  - dependency-name: nuxt-i18n
+    versions:
+    - 6.18.0
+    - 6.20.0
+    - 6.20.2
+    - 6.20.3
+    - 6.20.4
+    - 6.21.0
+    - 6.21.1
+    - 6.22.2
+    - 6.22.3
+    - 6.24.0
+  - dependency-name: nuxt
+    versions:
+    - 2.14.12
+    - 2.15.1
+    - 2.15.2
+    - 2.15.3
+  - dependency-name: start-server-and-test
+    versions:
+    - 1.11.7
+    - 1.12.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
